@@ -51,6 +51,50 @@ function q(word) {
 		for (var a in el[0]) {
 			str += el[0][a] + (a < el[0].length - 1 ? '\t@@\t' : '');
 		}
-		console.log({[str.trim()] : el[1].substring(0, 150)});
+		console.log({[str.trim()] : el[1]});
 	} );
+	console.log('-----------------------------------------------------');
 }
+
+var selectionEndTimeout = null;
+
+// bind selection change event to my function
+document.onselectionchange = userSelectionChanged;
+
+function userSelectionChanged() {
+
+    // wait 500 ms after the last selection change event
+    if (selectionEndTimeout) {
+        clearTimeout(selectionEndTimeout);
+    }
+
+    selectionEndTimeout = setTimeout(function () {
+        $(window).trigger('selectionEnd');
+    }, 500);
+	
+}
+
+function getSelectionText() {
+    var text = "";
+    if (window.getSelection) {
+        text = window.getSelection().toString();
+    } else if (document.selection && document.selection.type != "Control") {
+        text = document.selection.createRange().text;
+    }
+    return text;
+}
+
+jQuery(window).bind('selectionEnd', function () {
+
+    // reset selection timeout
+    selectionEndTimeout = null;
+
+    // get user selection
+    var selectedText = getSelectionText();
+
+    // if the selection is not empty show it :)
+	console.log('ВЫДЕЛЕНО: ' + selectedText);
+    if(selectedText != ''){
+       q(selectedText);
+    }
+});
