@@ -11,7 +11,7 @@
 
 var english_quiz;
 
-jQuery.get( "https://raw.githubusercontent.com/laralex/UniversitySmallStuff/master/CCNA%20Hack%20(IV-2018)/russian_dictionary.json", function( data ) {
+jQuery.get( "https://raw.githubusercontent.com/laralex/UniversitySmallStuff/master/CCNA%20Hack%20(IV-2018)/quiz.json", function( data ) {
 	english_quiz = JSON.parse(data); //entire page in html string
 });
 
@@ -24,11 +24,11 @@ var questionText = questionElement.innerText;
 
 var finalAnswers;
 
-for (question in quiz) {
+for (var question in Object.keys(english_quiz)) {
 	if (questionText.indexOf(question.substring(0, 40)) != -1) {
-		var answersGuess = quiz[question];
+		var answersGuess = english_quiz[question];
 		if (answersGuess.every( function(ag) {
-			for (answElem in answersElements) {
+			for (var answElem in answersElements) {
 				if (answElem.innerText == ag) return true;						
 			}
 			return false;
@@ -38,7 +38,7 @@ for (question in quiz) {
 }
 
 questionElement.innerText += ' Распознано: [ ';
-for (answ in finalAnswers) {
+for (var answ in finalAnswers) {
 	questionElement.innerText += '\'' + answ + '\' ,';
 }
 questionElement.innerText += ' ]\n';
