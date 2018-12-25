@@ -13,8 +13,7 @@
 var quiz;
 
 // load external html source with answers
-jQuery.get( "https://raw.githubusercontent.com/laralex/UniversitySmallStuff/master/CCNA%20Hack%20(IV-2018)/quiz.json", function( data ) {
-    
+jQuery.get( "https://raw.githubusercontent.com/laralex/UniversitySmallStuff/master/CCNA%20Hack%20(IV-2018)/quiz_full.json", function( data ) {
 	quiz = JSON.parse(data); //entire page in html string
 });
 
@@ -22,21 +21,24 @@ function q(word) {
 	var printMe = new Set();
 	for (var question in quiz) {
 		if (question.indexOf(word) >= 0) {
-			printMe.add([quiz[question], question]);
+			printMe.add([quiz[question][0], question]);
 		}
 	}
-	var vals = Object.values(quiz);
+	var vals = Object.values(quiz); //.map((el) => {return el[1]})
+	//console.log(vals);
 	for (var answers_i = 0; answers_i < vals.length; ++answers_i) {
 		var flag = false;
-		var answers = vals[answers_i];
+		var answers = vals[answers_i][1];
 		//console.log(answers);
 		if (answers == null) continue;
 		for (var answ_i = 0; answ_i < answers.length; ++answ_i) {
-			var answer = answers[answ_i].toString();
-			console.log(answer);
-			if (answer.toLowerCase().indexOf(word.toLowerCase()) >= 0) {
+			var ans = answers[answ_i];
+			//console.log(ans);
+			//console.log(ans.toLowerCase().indexOf(word.toLowerCase()) >= 0);
+			if (ans.toLowerCase().indexOf(word.toLowerCase()) >= 0) {
 				if (!flag) {
-					printMe.add([answers, Object.keys(quiz).find(key => quiz[key] === answers)]);
+					//console.log(vals[answers_i][0]);
+					printMe.add([vals[answers_i][0], Object.keys(quiz).find(key => quiz[key][0] === vals[answers_i][0])]);
 					flag = true;
 				}
 			}
@@ -49,6 +51,6 @@ function q(word) {
 		for (var a in el[0]) {
 			str += el[0][a] + (a < el[0].length - 1 ? '\t@@\t' : '');
 		}
-		console.log({[str.trim()] : el[1].substring(0, 100)});
+		console.log({[str.trim()] : el[1].substring(0, 150)});
 	} );
 }

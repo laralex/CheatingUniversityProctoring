@@ -30,7 +30,6 @@ function removeGarbage(cur) {
 }
 													
 for (var val in splited) {
-	console.log(val);
 	var question_block = splited[val].match(/.*<\/strong>/im); 
 	if (question_block != null) {
 		var question_text = question_block[0].replace(/(.*)<\/strong>/im, '$1');
