@@ -1,0 +1,1055 @@
+﻿<li><strong>What is a characteristic of a fault tolerant network?</strong>
+<ul>
+<li>a network that protects confidential information from unauthorized access</li>
+<li>a network that can expand quickly to support new users and applications without impacting the performance of the service delivered to existing users</li>
+<li>a network that supports a mechanism for managing congestion and ensuring reliable delivery of content to all users</li>
+<li><span style="color: #ff0000;"><strong>a network that recovers quickly when a failure occurs and depends on redundancy to limit the impact of a failure*</strong></span></li>
+</ul>
+</li>
+<li><strong>Three bank employees are using the corporate network. The first employee uses a web browser to view a company web page in order to read some announcements. The second employee accesses the corporate database to perform some financial transactions. The third employee participates in an important live audio conference with other corporate managers in branch offices. If QoS is implemented on this network, what will be the priorities from highest to lowest of the different data types?</strong>
+<ul>
+<li>financial transactions, audio conference, web page</li>
+<li><span style="color: #ff0000;"><strong>audio conference, financial transactions, web page*</strong></span></li>
+<li>audio conference, web page, financial transactions</li>
+<li>financial transactions, web page, audio conference</li>
+</ul>
+</li>
+<li><strong>What is a benefit of using cloud computing in networking?</strong>
+<ul>
+<li>End users have the freedom to use personal tools to access information and communicate across a business network.</li>
+<li><span style="color: #ff0000;"><strong>Network capabilities are extended without requiring investment in new infrastructure, personnel, or software.*</strong></span></li>
+<li>Technology is integrated into every-day appliances allowing them to interconnect with other devices, making them more ‘smart’ or automated.</li>
+<li>Home networking uses existing electrical wiring to connect devices to the network wherever there is an electrical outlet, saving the cost of installing data cables.</li>
+</ul>
+</li>
+<li><strong>What is the function of the shell in an OS?</strong>
+<ul>
+<li>It interacts with the device hardware.</li>
+<li><span style="color: #ff0000;"><strong>It interfaces between the users and the kernel.*</strong></span></li>
+<li>It provides dedicated firewall services.</li>
+<li>It provides the intrusion protection services for the device.</li>
+</ul>
+</li>
+<li><strong>Which connection provides a secure CLI session with encryption to a Cisco switch?</strong>
+<ul>
+<li>a console connection</li>
+<li>an AUX connection</li>
+<li>a Telnet connection</li>
+<li><span style="color: #ff0000;"><strong>an SSH connection*</strong></span></li>
+</ul>
+</li>
+<li><strong>A network technician is attempting to configure an interface by entering the following command: SanJose(config)# ip address 192.168.2.1 255.255.255.0. The command is rejected by the device. What is the reason for this?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>The command is being entered from the wrong mode of operation.*</strong></span></li>
+<li>The command syntax is wrong.</li>
+<li>The subnet mask information is incorrect.</li>
+<li>The interface is shutdown and must be enabled before the switch will accept the IP address.</li>
+</ul>
+</li>
+<li><strong>An administrator uses the Ctrl-Shift-6 key combination on a switch after issuing the ping command. What is the purpose of using these keystrokes?</strong>
+<ul>
+<li>to restart the ping process</li>
+<li><span style="color: #ff0000;"><strong>to interrupt the ping process*</strong></span></li>
+<li>to exit to a different configuration mode</li>
+<li>to allow the user to complete the command</li>
+</ul>
+</li>
+<li><strong>Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator uses a console connection to connect to the switch, which password is needed to access user EXEC mode?</strong><br>
+<img src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/2017-05-28_200126.png"><p></p>
+<ul>
+<li>letmein</li>
+<li>secretin</li>
+<li>linevtyin</li>
+<li><span style="color: #ff0000;"><strong>lineconin*</strong></span></li>
+</ul>
+</li>
+<li><strong>On which switch interface would an administrator configure an IP address so that the switch can be managed remotely?</strong>
+<ul>
+<li>FastEthernet0/1</li>
+<li><span style="color: #ff0000;"><strong>VLAN 1*</strong></span></li>
+<li>vty 0</li>
+<li>console 0</li>
+</ul>
+</li>
+<li><strong>What protocol is responsible for controlling the size of segments and the rate at which segments are exchanged between a web client and a web server?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>TCP*</strong></span></li>
+<li>IP</li>
+<li>HTTP</li>
+<li>Ethernet</li>
+</ul>
+</li>
+<li><strong>What is an advantage to using a protocol that is defined by an open standard?</strong>
+<ul>
+<li>A company can monopolize the market.</li>
+<li>The protocol can only be run on equipment from a specific vendor.</li>
+<li>An open standard protocol is not controlled or regulated by standards organizations.</li>
+<li><span style="color: #ff0000;"><strong>It encourages competition and promotes choices.*</strong></span></li>
+</ul>
+</li>
+<li><strong>What are two benefits of using a layered network model? (Choose two.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>It assists in protocol design. *</strong></span></li>
+<li>It speeds up packet delivery.</li>
+<li>It prevents designers from creating their own model.</li>
+<li><span style="color: #ff0000;"><strong>It prevents technology in one layer from affecting other layers.*</strong></span></li>
+<li>It ensures a device at one layer can function at the next higher layer.</li>
+</ul>
+</li>
+<li><strong>Which two OSI model layers have the same functionality as two layers of the TCP/IP model? (Choose two.)</strong>
+<ul>
+<li>data link</li>
+<li><span style="color: #ff0000;"><strong>network*</strong></span></li>
+<li>physical</li>
+<li>session</li>
+<li><span style="color: #ff0000;"><strong>transport*</strong></span></li>
+</ul>
+</li>
+<li><strong>Which name is assigned to the transport layer PDU?</strong>
+<ul>
+<li>bits</li>
+<li>data</li>
+<li>frame</li>
+<li>packet</li>
+<li><span style="color: #ff0000;"><strong>segment*</strong></span></li>
+</ul>
+</li>
+<li><strong>A network engineer is measuring the transfer of bits across the company backbone for a mission critical database application. The engineer notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>the amount of traffic that is currently crossing the network*</strong></span></li>
+<li>the sophistication of the encapsulation method applied to the data</li>
+<li><span style="color: #ff0000;"><strong>the type of traffic that is crossing the network*</strong></span></li>
+<li><span style="color: #ff0000;"><strong>the latency that is created by the number of network devices that the data is crossing*</strong></span></li>
+<li>the bandwidth of the WAN connection to the Internet</li>
+<li>the reliability of the gigabit Ethernet infrastructure of the backbone</li>
+</ul>
+</li>
+<li><strong>A network administrator is troubleshooting connectivity issues on a server. Using a tester, the administrator notices that the signals generated by the server NIC are distorted and not usable. In which layer of the OSI model is the error categorized?</strong>
+<ul>
+<li>presentation layer</li>
+<li>network layer</li>
+<li><span style="color: #ff0000;"><strong>physical layer*</strong></span></li>
+<li>data link layer</li>
+</ul>
+</li>
+<li><strong>Which type of UTP cable is used to connect a PC to a switch port?</strong>
+<ul>
+<li>console</li>
+<li>rollover</li>
+<li>crossover</li>
+<li><span style="color: #ff0000;"><strong><span style="color: #ff0000;"><strong>straight-through*</strong></span>*</strong></span></li>
+</ul>
+</li>
+<li><strong>A network administrator is measuring the transfer of bits across the company backbone for a mission critical financial application. The administrator notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>the amount of traffic that is currently crossing the network*</strong></span></li>
+<li>the sophistication of the encapsulation method applied to the data</li>
+<li><span style="color: #ff0000;"><strong>the type of traffic that is crossing the network *</strong></span></li>
+<li><span style="color: #ff0000;"><strong>the latency that is created by the number of network devices that the data is crossing*</strong></span></li>
+<li>the bandwidth of the WAN connection to the Internet</li>
+<li>the reliability of the gigabit Ethernet infrastructure of the backbone</li>
+</ul>
+</li>
+<li><strong>What is a characteristic of UTP cabling?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>cancellation*</strong></span></li>
+<li>cladding</li>
+<li>immunity to electrical hazards</li>
+<li>woven copper braid or metallic foil</li>
+</ul>
+</li>
+<li><strong>What are two characteristics of fiber-optic cable? (Choose two.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>It is not affected by EMI or RFI.*</strong></span></li>
+<li>Each pair of cables is wrapped in metallic foil.</li>
+<li>It combines the technique of cancellation, shielding, and twisting to protect data.</li>
+<li>It typically contains 4 pairs of fiber-optic wires.</li>
+<li><span style="color: #ff0000;"><strong>It is more expensive than UTP cabling is.*</strong></span></li>
+</ul>
+</li>
+<li><strong>What is a characteristic of the LLC sublayer?</strong>
+<ul>
+<li>It provides the logical addressing required that identifies the device.</li>
+<li>It provides delimitation of data according to the physical signaling requirements of the medium.</li>
+<li><span style="color: #ff0000;"><strong>It places information in the frame allowing multiple Layer 3 protocols to use the same network interface and media.*</strong></span></li>
+<li>It defines software processes that provide services to the physical layer.</li>
+</ul>
+</li>
+<li><strong>A network team is comparing physical WAN topologies for connecting remote sites to a headquarters building. Which topology provides high availability and connects some, but not all, remote sites?</strong>
+<ul>
+<li>mesh</li>
+<li><span style="color: #ff0000;"><strong>partial mesh*</strong></span></li>
+<li>hub and spoke</li>
+<li>point-to-point</li>
+</ul>
+</li>
+<li><strong>What method is used to manage contention-based access on a wireless network?</strong>
+<ul>
+<li>CSMA/CD</li>
+<li>priority ordering</li>
+<li><span style="color: #ff0000;"><strong>CSMA/CA*</strong></span></li>
+<li>token passing</li>
+</ul>
+</li>
+<li><strong>What are the three primary functions provided by Layer 2 data encapsulation? (Choose three.)</strong>
+<ul>
+<li>error correction through a collision detection method</li>
+<li>session control using port numbers</li>
+<li><span style="color: #ff0000;"><strong>data link layer addressing*</strong></span></li>
+<li>placement and removal of frames from the media</li>
+<li><span style="color: #ff0000;"><strong>detection of errors through CRC calculations *</strong></span></li>
+<li><span style="color: #ff0000;"><strong>delimiting groups of bits into frames*</strong></span></li>
+<li>conversion of bits into data signals</li>
+</ul>
+</li>
+<li><strong>What will a host on an Ethernet network do if it receives a frame with a destination MAC address that does not match its own MAC address?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>It will discard the frame.*</strong></span></li>
+<li>It will forward the frame to the next host.</li>
+<li>It will remove the frame from the media.</li>
+<li>It will strip off the data-link frame to check the destination IP address.</li>
+</ul>
+</li>
+<li><strong>What are two examples of the cut-through switching method? (Choose two.)</strong>
+<ul>
+<li>store-and-forward switching</li>
+<li><span style="color: #ff0000;"><strong>fast-forward switching*</strong></span></li>
+<li>CRC switching</li>
+<li><span style="color: #ff0000;"><strong>fragment-free switching*</strong></span></li>
+<li>QOS switching</li>
+</ul>
+</li>
+<li><strong>What are two actions performed by a Cisco switch? (Choose two.)</strong>
+<ul>
+<li>building a routing table that is based on the first IP address in the frame header</li>
+<li><span style="color: #ff0000;"><strong>using the source MAC addresses of frames to build and maintain a MAC address table*</strong></span></li>
+<li>forwarding frames with unknown destination IP addresses to the default gateway</li>
+<li><span style="color: #ff0000;"><strong>utilizing the MAC address table to forward frames via the destination MAC address*</strong></span></li>
+<li>examining the destination MAC address to add new entries to the MAC address table</li>
+</ul>
+</li>
+<li><strong>Which frame forwarding method receives the entire frame and performs a CRC check to detect errors before forwarding the frame?</strong>
+<ul>
+<li>cut-through switching</li>
+<li><span style="color: #ff0000;"><strong>store-and-forward switching*</strong></span></li>
+<li>fragment-free switching</li>
+<li>fast-forward switching</li>
+</ul>
+</li>
+<li><strong>Refer to the exhibit. If host A sends an IP packet to host B, what will the destination address be in the frame when it leaves host A?</strong><br>
+<img src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/2017-05-28_195511.png"><p></p>
+<ul>
+<li>DD:DD:DD:DD:DD:DD</li>
+<li>172.168.10.99</li>
+<li>CC:CC:CC:CC:CC:CC</li>
+<li>172.168.10.65</li>
+<li><span style="color: #ff0000;"><strong>BB:BB:BB:BB:BB:BB*</strong></span></li>
+<li>AA:AA:AA:AA:AA:AA</li>
+</ul>
+</li>
+<li><strong>What addresses are mapped by ARP?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>destination MAC address to a destination IPv4 address*</strong></span></li>
+<li>destination IPv4 address to the source MAC address</li>
+<li>destination IPv4 address to the destination host name</li>
+<li>destination MAC address to the source IPv4 address</li>
+</ul>
+</li>
+<li><strong>What information is added during encapsulation at OSI Layer 3?</strong>
+<ul>
+<li>source and destination MAC</li>
+<li>source and destination application protocol</li>
+<li>source and destination port number</li>
+<li><span style="color: #ff0000;"><strong>source and destination IP address*</strong></span></li>
+</ul>
+</li>
+<li><strong>What are two services provided by the OSI network layer? (Choose two.)</strong>
+<ul>
+<li>performing error detection</li>
+<li><span style="color: #ff0000;"><strong>routing packets toward the destination *</strong></span></li>
+<li><span style="color: #ff0000;"><strong>encapsulating PDUs from the transport layer*</strong></span></li>
+<li>placement of frames on the media</li>
+<li>collision detection</li>
+</ul>
+</li>
+<li><strong>Refer to the exhibit. The network administrator for a small advertising company has chosen to use the 192.168.5.96/27 network for internal LAN addressing. As shown in the exhibit, a static IP address is assigned to the company web server. However, the web server cannot access the Internet. The administrator verifies that local workstations with IP addresses that are assigned by a DHCP server can access the Internet, and the web server is able to ping local workstations. Which component is incorrectly configured?</strong><br>
+<img src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/i274685v1n1_38117.jpg"><p></p>
+<ul>
+<li>subnet mask</li>
+<li>DNS address</li>
+<li>host IP address</li>
+<li><span style="color: #ff0000;"><strong>default gateway address*</strong></span></li>
+</ul>
+</li>
+<li><strong>Why does a Layer 3 device perform the ANDing process on a destination IP address and subnet mask?</strong>
+<ul>
+<li>to identify the broadcast address of the destination network</li>
+<li>to identify the host address of the destination host</li>
+<li>to identify faulty frames</li>
+<li><span style="color: #ff0000;"><strong>to identify the network address of the destination network*</strong></span></li>
+</ul>
+</li>
+<li><strong>What are two functions of NVRAM? (Choose two.)</strong>
+<ul>
+<li>to store the routing table</li>
+<li><span style="color: #ff0000;"><strong>to retain contents when power is removed *</strong></span></li>
+<li><span style="color: #ff0000;"><strong>to store the startup configuration file*</strong></span></li>
+<li>to contain the running configuration file</li>
+<li>to store the ARP table</li>
+</ul>
+</li>
+<li><strong>Refer to the exhibit. What will be the result of entering this configuration the next time a network administrator connects a console cable to the router and no additional commands have been entered?</strong><br>
+<img class="aligncenter size-full" src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/2017-05-28_195821.png" width="363" height="194"><p></p>
+<ul>
+<li>The administrator will be required to enter Cisco123.</li>
+<li>The administrator will be required to enter Cisco234.</li>
+<li>The administrator will be required to enter Cisco789.</li>
+<li><span style="color: #ff0000;"><strong>The administrator will be presented with the R1&gt; prompt.*</strong></span></li>
+</ul>
+</li>
+<li><strong>What is the dotted decimal representation of the IPv4 address 11001011.00000000.01110001.11010011?</strong>
+<ul>
+<li>192.0.2.199</li>
+<li>198.51.100.201</li>
+<li><span style="color: #ff0000;"><strong>203.0.113.211*</strong></span></li>
+<li>209.165.201.223</li>
+</ul>
+</li>
+<li><strong>What are three characteristics of multicast transmission? (Choose three.)</strong>
+<ul>
+<li>The source address of a multicast transmission is in the range of 224.0.0.0 to 224.0.0.255.</li>
+<li><span style="color: #ff0000;"><strong>A single packet can be sent to a group of hosts. *</strong></span></li>
+<li><span style="color: #ff0000;"><strong>Multicast transmission can be used by routers to exchange routing information. *</strong></span></li>
+<li><span style="color: #ff0000;"><strong>Routers will not forward multicast addresses in the range of 224.0.0.0 to 224.0.0.255.*</strong></span></li>
+<li>Computers use multicast transmission to request IPv4 addresses.</li>
+<li>Multicast messages map lower layer addresses to upper layer addresses.</li>
+</ul>
+</li>
+<li><strong>What are the three ranges of IP addresses that are reserved for internal private use? (Choose three.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>10.0.0.0/8*</strong></span></li>
+<li>64.100.0.0/14</li>
+<li>127.16.0.0/12</li>
+<li><span style="color: #ff0000;"><strong>172.16.0.0/12*</strong></span></li>
+<li>192.31.7.0/24</li>
+<li><span style="color: #ff0000;"><strong>192.168.0.0/16*</strong></span></li>
+</ul>
+</li>
+<li><strong>What purpose does NAT64 serve in IPv6?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>It converts IPv6 packets into IPv4 packets.*</strong></span></li>
+<li>It translates private IPv6 addresses into public IPv6 addresses.</li>
+<li>It enables companies to use IPv6 unique local addresses in the network.</li>
+<li>It converts regular IPv6 addresses into 64-bit addresses that can be used on the Internet.</li>
+<li>It converts the 48-bit MAC address into a 64-bit host address that can be used for automatic host addressing.</li>
+</ul>
+</li>
+<li><strong>What is the most compressed representation of the IPv6 address 2001:0000:0000:abcd:0000:0000:0000:0001?</strong>
+<ul>
+<li>2001:0:abcd::1</li>
+<li><span style="color: #ff0000;"><strong>2001:0:0:abcd::1*</strong></span></li>
+<li>2001::abcd::1</li>
+<li>2001:0000:abcd::1</li>
+<li>2001::abcd:0:1</li>
+</ul>
+</li>
+<li><strong>Which range of link-local addresses can be assigned to an IPv6-enabled interface?</strong>
+<ul>
+<li>FEC0::/10</li>
+<li>FDEE::/7</li>
+<li><span style="color: #ff0000;"><strong>FE80::/10*</strong></span></li>
+<li>FF00::/8</li>
+</ul>
+</li>
+<li><strong>Which three addresses are valid public addresses? (Choose three.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong> 198.133.219.17*</strong></span></li>
+<li>192.168.1.245</li>
+<li>10.15.250.5</li>
+<li><span style="color: #ff0000;"><strong>128.107.12.117*</strong></span></li>
+<li>192.15.301.240</li>
+<li><span style="color: #ff0000;"><strong>64.104.78.227 *</strong></span></li>
+</ul>
+</li>
+<li><strong>Refer to the exhibit. On the basis of the output, which two statements about network connectivity are correct? (Choose two.)</strong><br>
+<img src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/i275429v1n1_chapter-9-WAN-images2.jpg"><p></p>
+<ul>
+<li><span style="color: #ff0000;"><strong>There is connectivity between this device and the device at 192.168.100.1.*</strong></span></li>
+<li>The connectivity between these two hosts allows for videoconferencing calls.</li>
+<li><span style="color: #ff0000;"><strong><span style="color: #ff0000;"><strong>There are 4 hops b*</strong></span>*</strong></span><span style="color: #ff0000;"><strong>etween this device and the device at 192.168.100.1.*</strong></span></li>
+<li>The average transmission time between the two hosts is 2 milliseconds.</li>
+<li>This host does not have a default gateway configured.</li>
+</ul>
+</li>
+<li><strong>What type of IPv6 address is FE80::1?</strong>
+<ul>
+<li>loopback</li>
+<li><span style="color: #ff0000;"><strong>link-local*</strong></span></li>
+<li>multicast</li>
+<li>global unicast</li>
+</ul>
+</li>
+<li><strong>How many valid host addresses are available on an IPv4 subnet that is configured with a /26 mask?</strong>
+<ul>
+<li>254</li>
+<li>190</li>
+<li>192</li>
+<li><span style="color: #ff0000;"><strong>62*</strong></span></li>
+<li>64</li>
+</ul>
+</li>
+<li><strong>A site administrator has been told that a particular network at the site must accommodate 126 hosts. Which subnet mask would be used that contains the required number of host bits?</strong>
+<ul>
+<li>255.255.255.0</li>
+<li><span style="color: #ff0000;"><strong>255.255.255.128*</strong></span></li>
+<li>255.255.255.224</li>
+<li>255.255.255.240</li>
+</ul>
+</li>
+<li><strong>A network administrator wants to have the same subnet mask for three subnetworks at a small site. The site has the following networks and numbers of devices:<br>
+Subnetwork A: IP phones – 10 addresses<br>
+Subnetwork B: PCs – 8 addresses<br>
+Subnetwork C: Printers – 2 addresses</strong><br>
+<strong>What single subnet mask would be appropriate to use for the three subnetworks?</strong><p></p>
+<ul>
+<li>255.255.255.0</li>
+<li><span style="color: #ff0000;"><strong>255.255.255.240*</strong></span></li>
+<li>255.255.255.248</li>
+<li>255.255.255.252</li>
+</ul>
+</li>
+<li><strong>How many hosts are addressable on a network that has a mask of 255.255.255.248?</strong>
+<ul>
+<li>2</li>
+<li><span style="color: #ff0000;"><strong>6*</strong></span></li>
+<li>8</li>
+<li>14</li>
+<li>16</li>
+<li>254</li>
+</ul>
+</li>
+<li><strong>Which subnet would include the address 192.168.1.96 as a usable host address?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>192.168.1.64/26*</strong></span></li>
+<li>192.168.1.32/27</li>
+<li>192.168.1.32/28</li>
+<li>192.168.1.64/29</li>
+</ul>
+</li>
+<li><strong>What subnet mask is needed if an IPv4 network has 40 devices that need IP addresses and address space is not to be wasted?</strong>
+<ul>
+<li>255.255.255.0</li>
+<li>255.255.255.128</li>
+<li><span style="color: #ff0000;"><strong>255.255.255.192*</strong></span></li>
+<li>255.255.255.224</li>
+<li>255.255.255.240</li>
+</ul>
+</li>
+<li><strong>What are two characteristics shared by TCP and UDP? (Choose two.)</strong>
+<ul>
+<li>default window size</li>
+<li>connectionless communication</li>
+<li><span style="color: #ff0000;"><strong>port numbering*</strong></span></li>
+<li>3-way handshake</li>
+<li>ability to to carry digitized voice</li>
+<li><span style="color: #ff0000;"><strong>use of checksum*</strong></span></li>
+</ul>
+</li>
+<li><strong>Why are port numbers included in the TCP header of a segment?</strong>
+<ul>
+<li>to indicate the correct router interface that should be used to forward a segment</li>
+<li>to identify which switch ports should receive or forward the segment</li>
+<li>to determine which Layer 3 protocol should be used to encapsulate the data</li>
+<li><span style="color: #ff0000;"><strong>to enable a receiving host to forward the data to the appropriate application*</strong></span></li>
+<li>to allow the receiving host to assemble the packet in the proper order</li>
+</ul>
+</li>
+<li><strong>Refer to the exhibit. Consider the IP address of 192.168.10.0/24 that has been assigned to a high school building. The largest network in this building has 100 devices. If 192.168.10.0 is the network number for the largest network, what would be the network number for the next largest network, which has 40 devices?</strong><br>
+<img src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/i245561v1n1_245561.jpg"><p></p>
+<ul>
+<li>192.168.10.0</li>
+<li><span style="color: #ff0000;"><strong>192.168.10.128*</strong></span></li>
+<li>192.168.10.192</li>
+<li>192.168.10.224</li>
+<li>192.168.10.240</li>
+</ul>
+</li>
+<li><strong>Which statement is true about variable-length subnet masking?</strong>
+<ul>
+<li>Each subnet is the same size.</li>
+<li><span style="color: #ff0000;"><strong>The size of each subnet may be different, depending on requirements.*</strong></span></li>
+<li>Subnets may only be subnetted one additional time.</li>
+<li>Bits are returned, rather than borrowed, to create additional subnets.</li>
+</ul>
+</li>
+<li><strong>In what two situations would UDP be the preferred transport protocol over TCP? (Choose two.)</strong>
+<ul>
+<li>when applications need to guarantee that a packet arrives intact, in sequence, and unduplicated</li>
+<li><span style="color: #ff0000;"><strong>when a faster delivery mechanism is needed*</strong></span></li>
+<li>when delivery overhead is not an issue</li>
+<li><span style="color: #ff0000;"><strong>when applications do not need to guarantee delivery of the data*</strong></span></li>
+<li>when destination port numbers are dynamic</li>
+</ul>
+</li>
+<li><strong>What important information is added to the TCP/IP transport layer header to ensure communication and connectivity with a remote network device?</strong>
+<ul>
+<li>timing and synchronization</li>
+<li><span style="color: #ff0000;"><strong>destination and source port numbers*</strong></span></li>
+<li>destination and source physical addresses</li>
+<li>destination and source logical network addresses</li>
+</ul>
+</li>
+<li><strong>What is the TCP mechanism used in congestion avoidance?</strong>
+<ul>
+<li>three-way handshake</li>
+<li>socket pair</li>
+<li>two-way handshake</li>
+<li><span style="color: #ff0000;"><strong>sliding window*</strong></span></li>
+</ul>
+</li>
+<li><strong>Which scenario describes a function provided by the transport layer?</strong>
+<ul>
+<li>A student is using a classroom VoIP phone to call home. The unique identifier burned into the phone is a transport layer address used to contact another network device on the same network.</li>
+<li>A student is playing a short web-based movie with sound. The movie and sound are encoded within the transport layer header.</li>
+<li><span style="color: #ff0000;"><strong>A student has two web browser windows open in order to access two web sites. The transport layer ensures the correct web page is delivered to the correct browser window.*</strong></span></li>
+<li>A corporate worker is accessing a web server located on a corporate network. The transport layer formats the screen so the web page appears properly no matter what device is being used to view the web site.</li>
+</ul>
+</li>
+<li><strong>A user opens three browsers on the same PC to access www.cisco.com to search for certification course information. The Cisco web server sends a datagram as a reply to the request from one of the web browsers. Which information is used by the TCP/IP protocol stack in the PC to identify which of the three web browsers should receive the reply?</strong>
+<ul>
+<li>the destination IP address</li>
+<li><span style="color: #ff0000;"><strong>the destination port number*</strong></span></li>
+<li>the source IP address</li>
+<li>the source port number</li>
+</ul>
+</li>
+<li><strong>What are two ways that TCP uses the sequence numbers in a segment? (Choose two.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>to identify missing segments at the destination *</strong></span></li>
+<li><span style="color: #ff0000;"><strong>to reassemble the segments at the remote location*</strong></span></li>
+<li>to specify the order in which the segments travel from source to destination</li>
+<li>to limit the number of segments that can be sent out of an interface at one time</li>
+<li>to determine if the packet changed during transit</li>
+</ul>
+</li>
+<li><strong>Which two tasks are functions of the presentation layer? (Choose two.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>compression*</strong></span></li>
+<li>addressing</li>
+<li><span style="color: #ff0000;"><strong>encryption*</strong></span></li>
+<li>session control</li>
+<li>authentication</li>
+</ul>
+</li>
+<li><strong>Which three statements characterize UDP? (Choose three.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>UDP provides basic connectionless transport layer functions.*</strong></span></li>
+<li>UDP provides connection-oriented, fast transport of data at Layer 3.</li>
+<li><span style="color: #ff0000;"><strong>UDP relies on application layer protocols for error detection. *</strong></span></li>
+<li><span style="color: #ff0000;"><strong>UDP is a low overhead protocol that does not provide sequencing or flow control mechanisms.*</strong></span></li>
+<li>UDP relies on IP for error detection and recovery.</li>
+<li>UDP provides sophisticated flow control mechanisms.</li>
+</ul>
+</li>
+<li><strong>What is a key characteristic of the peer-to-peer networking model?</strong>
+<ul>
+<li>wireless networking</li>
+<li>social networking without the Internet</li>
+<li>network printing using a print server</li>
+<li><span style="color: #ff0000;"><strong>resource sharing without a dedicated server*</strong></span></li>
+</ul>
+</li>
+<li><strong>A technician can ping the IP address of the web server of a remote company but cannot successfully ping the URL address of the same web server. Which software utility can the technician use to diagnose the problem?</strong>
+<ul>
+<li>tracert</li>
+<li>ipconfig</li>
+<li>netstat</li>
+<li><span style="color: #ff0000;"><strong>nslookup*</strong></span></li>
+</ul>
+</li>
+<li><strong>Which domain name would be an example of a top-level domain?</strong>
+<ul>
+<li>www.cisco.com</li>
+<li>cisco.com</li>
+<li><span style="color: #ff0000;"><strong>.com*</strong></span></li>
+<li>root.cisco.com</li>
+</ul>
+</li>
+<li><strong>A PC obtains its IP address from a DHCP server. If the PC is taken off the network for repair, what happens to the IP address configuration?</strong>
+<ul>
+<li>The configuration is permanent and nothing changes.</li>
+<li>The address lease is automatically renewed until the PC is returned.</li>
+<li><span style="color: #ff0000;"><strong>The address is returned to the pool for reuse when the lease expires.*</strong></span></li>
+<li>The configuration is held by the server to be reissued when the PC is returned.</li>
+</ul>
+</li>
+<li><strong>When planning for network growth, where in the network should packet captures take place to assess network traffic?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>on as many different network segments as possible*</strong></span></li>
+<li>only at the edge of the network</li>
+<li>between hosts and the default gateway</li>
+<li>only on the busiest network segment</li>
+</ul>
+</li>
+<li><strong>A wireless host needs to request an IP address. What protocol would be used to process the request?</strong>
+<ul>
+<li>FTP</li>
+<li>HTTP</li>
+<li><span style="color: #ff0000;"><strong>DHCP*</strong></span></li>
+<li>ICMP</li>
+<li>SNMP</li>
+</ul>
+</li>
+<li><strong>Which example of malicious code would be classified as a Trojan horse?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>malware that was written to look like a video game*</strong></span></li>
+<li>malware that requires manual user intervention to spread between systems</li>
+<li>malware that attaches itself to a legitimate program and spreads to other programs when launched</li>
+<li>malware that can automatically spread from one system to another by exploiting a vulnerability in the target</li>
+</ul>
+</li>
+<li><strong>When applied to a router, which command would help mitigate brute-force password attacks against the router?</strong>
+<ul>
+<li>exec-timeout 30</li>
+<li>service password-encryption</li>
+<li>banner motd $Max failed logins = 5$</li>
+<li><span style="color: #ff0000;"><strong>login block-for 60 attempts 5 within 60*</strong></span></li>
+</ul>
+</li>
+<li><strong>A network technician suspects that a particular network connection between two Cisco switches is having a duplex mismatch. Which command would the technician use to see the Layer 1 and Layer 2 details of a switch port? </strong>
+<ul>
+<li>show mac-address-table</li>
+<li>show ip interface brief</li>
+<li><span style="color: #ff0000;"><strong>show interfaces*</strong></span></li>
+<li>show running-config</li>
+</ul>
+</li>
+<li><strong>Where are Cisco IOS debug output messages sent by default?</strong>
+<ul>
+<li>Syslog server</li>
+<li><span style="color: #ff0000;"><strong>console line*</strong></span></li>
+<li>memory buffers</li>
+<li>vty lines</li>
+</ul>
+</li>
+<li><strong>Match the description with the associated IOS mode. (not all options are used.)</strong>
+<ul>
+<li>Question<br>
+<img src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/2017-05-2dsđ8_192437.jpg"></li>
+<li>Answer<br>
+<img src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/2017-05-28_192437.png"></li>
+</ul>
+</li>
+<li><strong>Refer to the exhibit. Match the packets with their destination IP address to the exiting interfaces on the router. (Not all targets are used.)</strong><br>
+<img src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/i206417v1n2_2064172.jpg"><p></p>
+<ul>
+<li>Question<br>
+<img class="size-full wp-image-2178" src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/CCNA1-Final-Exam-v5.1-004-Question-01.png" alt="CCNA1 Final Exam v5.1 004 Question" width="1010" height="279"></li>
+<li>Answer<br>
+<img class="size-full wp-image-2179" src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/CCNA1-Final-Exam-v5.1-004-Question.png" alt="CCNA1 Final Exam v5.1 004 Question" width="451" height="274"></li>
+</ul>
+</li>
+<li><strong>Refer to the exhibit. An administrator is testing connectivity to a remote device with the IP address 10.1.1.1. What does the output of this command indicate?</strong><br>
+<img src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/i204753v1n2_Question-9.jpg"><p></p>
+<ul>
+<li>Connectivity to the remote device was successful.</li>
+<li><span style="color: #ff0000;"><strong>A router along the path did not have a route to the destination.*</strong></span></li>
+<li>A ping packet is being blocked by a security device along the path.</li>
+<li>The connection timed out while waiting for a reply from the remote device.</li>
+</ul>
+</li>
+<li><strong>A user is unable to reach the web site when typing http://www.cisco.com in a web browser, but can reach the same site by typing http://72.163.4.161. What is the issue?</strong>
+<ul>
+<li>default gateway</li>
+<li>DHCP</li>
+<li>TCP/IP protocol stack</li>
+<li><span style="color: #ff0000;"><strong>DNS *</strong></span></li>
+</ul>
+</li>
+<li><strong>A company is expanding its business to other countries. All branch offices must remain connected to corporate headquarters at all times. Which network technology is required to support this requirement?</strong>
+<ul>
+<li>LAN</li>
+<li>MAN</li>
+<li><span style="color: #ff0000;"><strong>WAN*</strong></span></li>
+<li>WLAN</li>
+</ul>
+</li>
+<li><strong>A home user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong> DSL*</strong></span></li>
+<li>dial-up</li>
+<li>satellite</li>
+<li>cell modem</li>
+<li>cable modem</li>
+</ul>
+</li>
+<li><strong>How does quality of service help a network support a wide range of applications and services?</strong>
+<ul>
+<li>by limiting the impact of a network failure</li>
+<li>by allowing quick recovery from network failures</li>
+<li><span style="color: #ff0000;"><strong>by providing mechanisms to manage congested network traffic*</strong></span></li>
+<li>by providing the ability for the network to grow to accommodate new users</li>
+</ul>
+</li>
+<li><strong>What source IP address does a router use by default when the traceroute command is issued?</strong>
+<ul>
+<li>the highest configured IP address on the router</li>
+<li>the lowest configured IP address on the router</li>
+<li>a loopback IP address</li>
+<li><span style="color: #ff0000;"><strong>the IP address of the outbound interface*</strong></span></li>
+</ul>
+</li>
+<li><strong>After making configuration changes on a Cisco switch, a network administrator issues a copy running-config startup-config command. What is the result of issuing this command?</strong>
+<ul>
+<li>The new configuration will be stored in flash memory.</li>
+<li><span style="color: #ff0000;"><strong>The new configuration will be loaded if the switch is restarted.*</strong></span></li>
+<li>The current IOS file will be replaced with the newly configured file.</li>
+<li>The configuration changes will be removed and the original configuration will be restored.</li>
+</ul>
+</li>
+<li><strong>Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator has already logged into a Telnet session on the switch, which password is needed to access privileged EXEC mode?</strong><br>
+<img src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/i223580v1n1_208237.jpg"><p></p>
+<ul>
+<li><span class="Apple-tab-span" style="white-space: pre;"> letmein</span></li>
+<li><span class="Apple-tab-span" style="white-space: pre;"><span style="color: #ff0000;"><strong> secretin*</strong></span></span></li>
+<li><span class="Apple-tab-span" style="white-space: pre;"> lineconin</span></li>
+<li><span class="Apple-tab-span" style="white-space: pre;"> linevtyin</span></li>
+</ul>
+</li>
+<li><strong>Match each item to the type of topology diagram on which it is typically identified. (Not all options are used.)</strong>Question<br>
+<img class="size-full wp-image-2231" src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/CCNA1-Final-Exam-v5.1-005-Question.png" alt="CCNA1 Final Exam v5.1 005 Question" width="1023" height="238">Answer<br>
+<img class="size-full wp-image-2230" src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/CCNA1-Final-Exam-v5.1-005-Answer.png" alt="CCNA1 Final Exam v5.1 005 Answer" width="460" height="242"></li>
+<li><strong>Which connection provides a secure CLI session with encryption to a Cisco network device?</strong>
+<ul>
+<li>a console connection</li>
+<li>an AUX connection</li>
+<li>a Telnet connection</li>
+<li><span style="color: #ff0000;"><strong>an SSH connection*</strong></span></li>
+</ul>
+</li>
+<li><strong>What function does pressing the Tab key have when entering a command in IOS?</strong>
+<ul>
+<li>It aborts the current command and returns to configuration mode.</li>
+<li>It exits configuration mode and returns to user EXEC mode.</li>
+<li>It moves the cursor to the beginning of the next line.</li>
+<li><span style="color: #ff0000;"><strong>It completes the remainder of a partially typed word in a command.*</strong></span></li>
+</ul>
+</li>
+<li><strong>What layer is responsible for routing messages through an internetwork in the TCP/IP model?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>internet*</strong></span></li>
+<li>transport</li>
+<li>network access</li>
+<li>session</li>
+</ul>
+</li>
+<li><strong>Which statement accurately describes a TCP/IP encapsulation process when a PC is sending data to the network?</strong>
+<ul>
+<li>Data is sent from the internet layer to the network access layer.</li>
+<li>Packets are sent from the network access layer to the transport layer.</li>
+<li><span style="color: #ff0000;"><strong>Segments are sent from the transport layer to the internet layer.*</strong></span></li>
+<li>Frames are sent from the network access layer to the internet layer.</li>
+</ul>
+</li>
+<li><strong>What unique address is embedded in an Ethernet NIC and used for communication on an Ethernet network?</strong>
+<ul>
+<li>host address</li>
+<li>IP address</li>
+<li><span style="color: #ff0000;"><strong>MAC address*</strong></span></li>
+<li>network address</li>
+<li>k layer</li>
+</ul>
+</li>
+<li><strong>Which procedure is used to reduce the effect of crosstalk in copper cables?</strong>
+<ul>
+<li>requiring proper grounding connections</li>
+<li><span style="color: #ff0000;"><strong>twisting opposing circuit wire pairs together*</strong></span></li>
+<li>wrapping the bundle of wires with metallic shielding</li>
+<li>designing a cable infrastructure to avoid crosstalk interference</li>
+<li>avoiding sharp bends during installation</li>
+</ul>
+</li>
+<li><strong>During the encapsulation process, what occurs at the data link layer for a PC connected to an Ethernet network?</strong>
+<ul>
+<li>An IP address is added.</li>
+<li>The logical address is added.</li>
+<li><span style="color: #ff0000;"><strong>The physical address is added.*</strong></span></li>
+<li>The process port number is added.</li>
+</ul>
+</li>
+<li><strong>What are two characteristics of Ethernet MAC addresses? (Choose two.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>They are globally unique.*</strong></span></li>
+<li>They are routable on the Internet.</li>
+<li><span style="color: #ff0000;"><strong>They are expressed as 12 hexadecimal digits.*</strong></span></li>
+<li>MAC addresses use a flexible hierarchical structure.</li>
+<li>MAC addresses must be unique for both Ethernet and serial interfaces on a device.</li>
+</ul>
+</li>
+<li><strong>If a device receives an Ethernet frame of 60 bytes, what will it do?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>drop the frame*</strong></span></li>
+<li>process the frame as it is</li>
+<li>send an error message to the sending device</li>
+<li>add random data bytes to make it 64 bytes long and then forward it</li>
+</ul>
+</li>
+<li><strong>Under which two circumstances will a switch flood a frame out of every port except the port that the frame was received on? (Choose two.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>The frame has the broadcast address as the destination address. *</strong></span></li>
+<li><span style="color: #ff0000;"><strong>The destination address is unknown to the switch.*</strong></span></li>
+<li>The source address in the frame header is the broadcast address.</li>
+<li>The source address in the frame is a multicast address.</li>
+<li>The destination address in the frame is a known unicast address.</li>
+</ul>
+</li>
+<li><strong>Which switching method has the lowest level of latency?</strong>
+<ul>
+<li>cut-through</li>
+<li>store-and-forward</li>
+<li>fragment-free</li>
+<li><span style="color: #ff0000;"><strong>fast-forward*</strong></span></li>
+</ul>
+</li>
+<li><strong>Which two commands can be used on a Windows host to display the routing table? (Choose two.)</strong>
+<ul>
+<li>netstat -s</li>
+<li><span style="color: #ff0000;"><strong>route print*</strong></span></li>
+<li>show ip route</li>
+<li><span style="color: #ff0000;"><strong>netstat -r*</strong></span></li>
+<li>tracert</li>
+</ul>
+</li>
+<li><strong>Which two functions are primary functions of a router? (Choose two.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>packet forwarding*</strong></span></li>
+<li>microsegmentation</li>
+<li>domain name resolution</li>
+<li><span style="color: #ff0000;"><strong>path selection*</strong></span></li>
+<li>flow control</li>
+</ul>
+</li>
+<li><strong>What is the binary representation of 0xCA?</strong>
+<ul>
+<li>10111010</li>
+<li>11010101</li>
+<li><span style="color: #ff0000;"><strong>11001010*</strong></span></li>
+<li>11011010</li>
+</ul>
+</li>
+<li><strong>At a minimum, which address is required on IPv6-enabled interfaces?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong> link-local*</strong></span></li>
+<li>unique local</li>
+<li>site local</li>
+<li>global unicast</li>
+</ul>
+</li>
+<li><strong>Which service provides dynamic global IPv6 addressing to end devices without using a server that keeps a record of available IPv6 addresses?</strong>
+<ul>
+<li>stateful DHCPv6</li>
+<li><span style="color: #ff0000;"><strong>SLAAC*</strong></span></li>
+<li>static IPv6 addressing</li>
+<li>stateless DHCPv6</li>
+</ul>
+</li>
+<li><strong>What is the purpose of the command ping ::1?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>It tests the internal configuration of an IPv6 host.*</strong></span></li>
+<li>It tests the broadcast capability of all hosts on the subnet.</li>
+<li>It tests the multicast connectivity to all hosts on the subnet.</li>
+<li>It tests the reachability of the default gateway for the network.</li>
+</ul>
+</li>
+<li><strong>How many usable IP addresses are available on the 192.168.1.0/27 network?</strong>
+<ul>
+<li>256</li>
+<li>254</li>
+<li>62</li>
+<li><span style="color: #ff0000;"><strong>30*</strong></span></li>
+<li>16</li>
+<li>32</li>
+</ul>
+</li>
+<li><strong>What is the process of dividing a data stream into smaller pieces before transmission?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>segmentation*</strong></span></li>
+<li>encapsulation</li>
+<li>encoding</li>
+<li>flow control</li>
+</ul>
+</li>
+<li><strong>When IPv4 addressing is manually configured on a web server, which property of the IPv4 configuration identifies the network and host portion for an IPv4 address?</strong>
+<ul>
+<li>DNS server address</li>
+<li><span style="color: #ff0000;"><strong>subnet mask*</strong></span></li>
+<li>default gateway</li>
+<li>DHCP server address</li>
+</ul>
+</li>
+<li><strong>Which two roles can a computer assume in a peer-to-peer network where a file is being shared between two computers? (Choose two.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>client*</strong></span></li>
+<li>master</li>
+<li><span style="color: #ff0000;"><strong>server*</strong></span></li>
+<li>slave</li>
+<li>transient</li>
+</ul>
+</li>
+<li><strong>Which two protocols operate at the highest layer of the TCP/IP protocol stack? (Choose two.)</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>DNS*</strong></span></li>
+<li>Ethernet</li>
+<li>IP</li>
+<li><span style="color: #ff0000;"><strong>POP*</strong></span></li>
+<li>TCP</li>
+<li>UDP</li>
+</ul>
+</li>
+<li><strong>What is one difference between the client-server and peer-to-peer network models?</strong>
+<ul>
+<li>Only in the client-server model can file transfers occur.</li>
+<li><span style="color: #ff0000;"><strong>Every device in a peer-to-peer network can function as a client or a server.*</strong></span></li>
+<li>A peer-to-peer network transfers data faster than a transfer using a client-server network.</li>
+<li>A data transfer that uses a device serving in a client role requires that a dedicated server be present.</li>
+</ul>
+</li>
+<li><strong>What is the function of the HTTP GET message?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>to request an HTML page from a web server*</strong></span></li>
+<li>to send error information from a web server to a web client</li>
+<li>to upload content to a web server from a web client</li>
+<li>to retrieve client email from an email server using TCP port 110</li>
+</ul>
+</li>
+<li><strong>Which networking model is being used when an author uploads one chapter document to a file server of a book publisher?</strong>
+<ul>
+<li>peer-to-peer</li>
+<li>master-slave</li>
+<li><span style="color: #ff0000;"><strong>client/server*</strong></span></li>
+<li>point-to-point</li>
+</ul>
+</li>
+<li>What network service resolves the URL entered on a PC to the IP address of the destination server?
+<ul>
+<li><span style="color: #ff0000;"><strong>DNS*</strong></span></li>
+<li>DHCP</li>
+<li>FTP</li>
+<li>SNMP</li>
+</ul>
+</li>
+<li><strong>A network engineer is analyzing reports from a recently performed network baseline. Which situation would depict a possible latency issue?</strong>
+<ul>
+<li>a change in the bandwidth according to the show interfaces output</li>
+<li>a next-hop timeout from a traceroute</li>
+<li><span style="color: #ff0000;"><strong>an increase in host-to-host ping response times*</strong></span></li>
+<li>a change in the amount of RAM according to the show version output</li>
+</ul>
+</li>
+<li><strong>Which firewall feature is used to ensure that packets coming into a network are legitimate responses to requests initiated from internal hosts?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>stateful packet inspection*</strong></span></li>
+<li>URL filtering</li>
+<li>application filtering</li>
+<li>packet filtering</li>
+</ul>
+</li>
+<li><strong>What is one indication that a Windows computer did not receive an IPv4 address from a DHCP server?</strong>
+<ul>
+<li>The computer cannot ping 127.0.0.1.</li>
+<li>Windows displays a DHCP timeout message.</li>
+<li><span style="color: #ff0000;"><strong>The computer receives an IP address that starts with 169.254*</strong></span></li>
+<li>The computer cannot ping other devices on the same network with IP addresses in the 169.254.0.0/16 range.</li>
+</ul>
+</li>
+<li><strong>Which command can an administrator issue on a Cisco router to send debug messages to the vty lines?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>terminal monitor*</strong></span></li>
+<li>logging console</li>
+<li>logging buffered</li>
+<li>logging synchronous</li>
+</ul>
+</li>
+<li><strong>Fill in the blank.</strong><br>
+During data communications, a host may need to send a single message to a specific group of destination hosts simultaneously. This message is in the form of a <span style="color: #ff0000;"><strong>Multicast *</strong></span>message.</li>
+<li><strong>A medium-sized business is researching available options for connecting to the Internet. The company is looking for a high speed option with dedicated, symmetric access. Which connection type should the company choose?</strong>
+<ul>
+<li>DSL</li>
+<li>dialup</li>
+<li>satellite</li>
+<li><span style="color: #ff0000;"><strong>leased line*</strong></span></li>
+<li>cable modem</li>
+</ul>
+</li>
+<li><strong>What is the purpose of having a converged network?</strong>
+<ul>
+<li>to provide high speed connectivity to all end devices</li>
+<li>to make sure that all types of data packets will be treated equally</li>
+<li>to achieve fault tolerance and high availability of data network infrastructure devices</li>
+<li><span style="color: #ff0000;"><strong>to reduce the cost of deploying and maintaining the communication infrastructure*</strong></span></li>
+</ul>
+</li>
+<li><strong>What characteristic of a network enables it to quickly grow to support new users and applications without impacting the performance of the service being delivered to existing users?</strong>
+<ul>
+<li>reliability</li>
+<li><span style="color: #ff0000;"><strong>scalability*</strong></span></li>
+<li>quality of service</li>
+<li>accessibility</li>
+</ul>
+</li>
+<li><strong>After several configuration changes are made to a router, the copy running-configuration startup-configuration command is issued. Where will the changes be stored?</strong>
+<ul>
+<li>flash</li>
+<li>ROM</li>
+<li><span style="color: #ff0000;"><strong>NVRAM*</strong></span></li>
+<li>RAM</li>
+<li>the configuration register</li>
+<li>a TFTP server</li>
+</ul>
+</li>
+<li><strong>Refer to the exhibit. From global configuration mode, an administrator is attempting to create a message-of-the-day banner by using the command banner motd V Authorized access only! Violators will be prosecuted! V When users log in using Telnet, the banner does not appear correctly. What is the problem?</strong><br>
+<img src="./CCNA 1 Final Exam Answers 2018 (v5.1+v6.0) Introduction to Networks_files/36489.jpg"><p></p>
+<ul>
+<li>The banner message is too long.</li>
+<li><span style="color: #ff0000;"><strong>The delimiting character appears in the banner message.*</strong></span></li>
+<li>The symbol “!” signals the end of a banner message.</li>
+<li>Message-of-the-day banners will only appear when a user logs in through the console port.</li>
+</ul>
+</li>
+<li><strong>What are three characteristics of an SVI? (Choose three.)</strong>
+<ul>
+<li>It is designed as a security protocol to protect switch ports.</li>
+<li><span style="color: #ff0000;"><strong>It is not associated with any physical interface on a switch.*</strong></span></li>
+<li>It is a special interface that allows connectivity by different types of media.</li>
+<li>It is required to allow connectivity by any device at any location.</li>
+<li><span style="color: #ff0000;"><strong>It provides a means to remotely manage a switch. *</strong></span></li>
+<li><span style="color: #ff0000;"><strong>It is associated with VLAN1 by default.*</strong></span></li>
+</ul>
+</li>
+<li><strong>A technician configures a switch with these commands:</strong><strong>SwitchA(config)# interface vlan 1 </strong><br>
+<strong>SwitchA(config-if)# ip address 192.168.1.1 255.255.255.0 </strong><br>
+<strong>SwitchA(config-if)# no shutdown</strong><strong>What is the technician configuring?</strong><p></p>
+<ul>
+<li>Telnet access</li>
+<li><span style="color: #ff0000;"><strong>SVI*</strong></span></li>
+<li>password encryption</li>
+<li>physical switchport access</li>
+</ul>
+</li>
+<li><strong>In computer communication, what is the purpose of message encoding?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>to convert information to the appropriate form for transmission*</strong></span></li>
+<li>to interpret information</li>
+<li>to break large messages into smaller frames</li>
+<li>to negotiate correct timing for successful communication</li>
+</ul>
+</li>
+<li><strong>What is a characteristic of multicast messages?</strong>
+<ul>
+<li><span style="color: #ff0000;"><strong>They are sent to a select group of hosts.*</strong></span></li>
+<li>They must be acknowledged.</li>
+<li>They are sent to a single destination.</li>
+<li>They are sent to all hosts on a network.</li>
+</ul>
+</li>
+</ol>
