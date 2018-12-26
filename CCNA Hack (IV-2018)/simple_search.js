@@ -15,7 +15,7 @@ jQuery(window).bind('selectionEnd', function () {
 			// if the selection is not empty show it :)
 			if(selectedText != ''){
 			   let returnedStr = q(selectedText);
-			   document.getElementById('questions').title =  returnedStr ? returnedStr : ' ' ;
+			   document.getElementById('hdr').title =  returnedStr ? returnedStr : ' ' ;
 			}
 		});
 
