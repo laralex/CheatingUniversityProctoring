@@ -1,0 +1,57 @@
+{
+	// Required
+    "name": "Databases Riot",
+    "version": "0.1",
+    "manifest_version": 2, // for Chrome18+
+	
+	// Optional
+	"browser_action": {
+		"default_title": "Databases Riot",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"commands": {
+		"reload_hack" : {
+			"suggested_key": {"default": "Alt+Z"},
+			"description":"Reload hack script for DOM inject"
+		},
+		"redo_manual_search" : {
+			"suggested_key": {"default": "Alt+X"},
+			"description":"Redo manual search in JSON using textarea search string"
+		},
+		"_execute_browser_action":{
+			"suggested_key": {"default": "Alt+Q"},
+			"description":"idk"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			//"matches": ["*://*.spbstu/*"],
+			"js": ["content_script.js"]//,
+			//"run_at": "document_idle",
+			//"all_frames": true
+		}
+	],
+	"offline_enabled": true,
+	"permissions": [ 
+		"activeTab", 
+		//"tabs", 
+		"background", 
+		"clipboardRead", 
+		"clipboardWrite",
+		"contentSettings",
+		"debugger",
+		"pageCapture"
+		// Чем больше сила, тем больше и ответственность
+	],
+	"web_accessible_resources": [
+		"background_hack_script.js",
+		"hack_script.js",
+		"completed_test.json"
+	]
+  
+ }
