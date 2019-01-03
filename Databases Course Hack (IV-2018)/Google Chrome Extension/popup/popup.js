@@ -42,18 +42,6 @@ function BindFunctionalityWithUI(){
 	//ui_btn_paste.onclick		= OnPasteSearchPressed;
 	ui_div_reload_hack.onclick	= OnReloadHackScriptPressed;
 	//ui_div_enable_extension.onclick 	= OnEnablePressed;
-	
-	/*
-	ui_textarea_search.addEventListener('paste', function handlePaste(e){
-		e.stopPropagation();
-		e.preventDefault();
-		let clipboard_data = e.clipboardData || window.clipboardData;
-		let pastedData = clipboardData.getData('Text');
-		let cursor_start = ui_textarea_search.selectionStart, 
-			cursor_end = ui_textarea_search.selectionStart;
-		ui_textarea_search.value = ui_textarea_search.value.substr(0, cursor_start) + pastedData + ui_textarea_search.value.substr(cursor_start + 1, cursor_end - cursor_start - 1); 
-	});
-	*/
 };
 
 /* Calls the background script. Retrieves relevant state of app_data object
@@ -95,14 +83,18 @@ function FillSearchTable(quiz){
 function GetStatus(){
 	let max = 0;
 	let err_codes = app_data['err_codes'];
-	Object.keys(app_data['err_codes']).forEach((e) => {if (err_codes[e] && parseInt(e) > max) max = parseInt(e);});
+	for (let i = 1; i < app_data['err_codes'].length; ++i){
+		if (err_codes[i] && parseInt(i) > max) max = parseInt(i);
+	}
 	return max;
 }
 
 /* Add status effect from 0 to 4. Adding 0 means delete all bad effects. */
 function AddToStatus(status_code){
 	if (status_code === 0) {
-		app_data['err_codes'].map((e)=>{e = false;});
+		for (let i = 1; i < app_data['err_codes'].length; ++i){
+			app_data['err_codes'][i] = false;
+		}
 	} else {
 		app_data['err_codes'][status_code] = true;
 	}	
@@ -113,7 +105,9 @@ function AddToStatus(status_code){
 /* Remove status effect from 0 to 4. Removing 0 means delete all bad effects. */
 function RemoveFromStatus(status_code){
 	if (status_code === 0) {
-		app_data['err_codes'].map((e)=>{e = false;});
+		for (let i = 1; i < app_data['err_codes'].length; ++i){
+			app_data['err_codes'][i] = false;
+		}
 	} else {
 		app_data['err_codes'][status_code] = false;;
 	}
@@ -174,14 +168,9 @@ function VisualizeManualSearch(){
    to apply hack activity once again (if it somehow didn't)
    Changes status effects of application */
 function ReloadHackScript(){
-	/*
-	chrome.tabs.query({active:true, currentWindow:true}, function(tabs) {
-	chrome.tabs.sendMessage(tabs[0].id, {action:"ReloadHack"}, function(response){
-	*/
-	chrome.tabs.sendMessage({action:"ReloadHack"}, function(response){
-		switch (response['result']){
+	chrome.runtime.sendMessage({action:"ReloadHack"}, function(response){
+		switch (response.result){
 			case 'ok':
-				console.log('ok');
 				AddToStatus(0);
 				break;
 			case 'cant_load':
@@ -197,12 +186,6 @@ function ReloadHackScript(){
 	});
 }
 
-/*
-// Make content script to download current html page
-function DownloadHtmlPage(){
-	
-}
-*/		
 
 /* Enable or Disable&Clear application activities */
 /*
@@ -236,16 +219,6 @@ function OnClearSearchPressed(){
 	OnTextareaInput();
 }
 
-/*
-function OnCopySearchPressed(){
-	let selected = window.getSelection();
-	CopyTextToClipboard(selected);
-}
-
-function OnPasteSearchPressed(){
-	
-}
-*/
 
 function OnTextareaInput(){
 	console.log("Textarea changed");
@@ -256,7 +229,7 @@ function OnTextareaInput(){
 		VisualizeManualSearch();
 		return;
 	} 
-	chrome.runtime.sendMessage({action:"Search", search_str:app_data['search_request']}, function(response){
+	chrome.runtime.sendMessage({action:"SearchOne", search_str:app_data['search_request']}, function(response){
 			console.log("Popup receives reply");
 			app_data['search_result_size'] = response.length;
 			app_data['search_result'] = response;

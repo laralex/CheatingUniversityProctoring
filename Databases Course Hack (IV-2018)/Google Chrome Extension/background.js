@@ -1,5 +1,6 @@
-let app_data;
-
+// ****************
+// Replace with fresh
+// ****************
 var answers = [
 {"n": 1, "q": "В разделе GROUP BY можно использовать подзапрос", "a": "Неверно"},
 {"n": 2, "q": "При создании каких ограничений в базе автоматически создаются индексы на те же столбцы?", "a": "PRIMARY KEY, UNIQUE"},
@@ -311,6 +312,9 @@ var answers = [
 {"n": 105, "q": "Какие из представленных запросов выведут последовательность чисел от 5 до 25?", "a": "SELECT level+4 FROM DUAL CONNECT BY level<=21, SELECT level+4 FROM DUAL CONNECT BY level+4<=25; SELECT level FROM DUAL START WITH level=5 CONNECT BY level<=25"}
 ];
 
+let app_data;
+
+
 chrome.runtime.onMessage.addListener(
 	function (message, sender, sendResponse) {
 		//console.log("Background received message");
@@ -322,7 +326,7 @@ chrome.runtime.onMessage.addListener(
 			case "LoadData":
 				if (!app_data) {
 					app_data = {
-						err_codes: {1:false, 2:false, 3:false, 4:false}, 
+						err_codes: [null, false, false, false, false], 
 						isEnabled: true, 
 						search_request: "",
 						search_result: [], 
@@ -330,27 +334,41 @@ chrome.runtime.onMessage.addListener(
 					}; 
 				}
 				//console.log(app_data);
-				sendResponse({data:app_data});
+				sendResponse( {data:app_data} );
 				break;
-			case "Search":
+			case "SearchOne":
 				sendResponse( SearchFor(message.search_str) );
 				break;
+			case "SearchMany":
+				sendResponse( { answers:SearchMany(message.questions) } );
+				break;
 			case "ReloadHack":
-				sendResponse( { result:"cant_load" } );
+				let computed_answers = []; 
+				chrome.tabs.query({active:true, currentWindow:true}, function(tabs) {
+					chrome.tabs.sendMessage(tabs[0].id, {action:"GetQuestions"}, function(response){
+						//console.log("Content script returned questions: ", response);
+						if (response.result === "ok"){
+							computed_answers = SearchMany(response.questions);
+							chrome.tabs.sendMessage(tabs[0].id, {action:"AddTips", answers: computed_answers}, function(response){
+								console.log("Content script added tips: ", response);
+								if (response.result === "ok"){
+									sendResponse( { result:"ok" } );
+								}
+							});
+						}
+						
+					});
+				});
+				
 				break;
 		}
+		return true;
 	}
 );
 
-/*
-chrome.runtime.onMessage.addListener(
-	function (request, sender, sendResponse) {
-		console.log("Content script got request for: ", request);
-		switch(request.action) {
-			
-		}
-	}
-);*/
+// ****************
+// Replace with fresh
+// ****************
 
 function AreSimiliar(question1, question2) {
 /* Сравнение. Убираем все символы кроме алфавитов, цифр. Плюс на всякий убираем ьъеёщш. А то всякие неграмотные путают тся и ться, щ и ш... */
@@ -380,4 +398,13 @@ function SearchFor(question){
 			result.push(answers[a]);
 	}
 	return result || [];
+}
+
+function SearchMany(questions){
+	let computed_answers = [];
+	let texts = questions.texts;
+	for(let i = 0; i < texts.length; ++i){
+		computed_answers.push(SearchFor(texts[i]));
+	}
+	return computed_answers;
 }
