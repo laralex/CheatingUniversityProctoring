@@ -1,38 +1,46 @@
 // load jQuery
+var $;
 (function() {
-    // Load the script
     var script = document.createElement("script");
     script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js';
     script.type = 'text/javascript';
     script.onload = function() {
-        var $ = window.jQuery;
+        $ = window.jQuery;
     };
     document.getElementsByTagName("head")[0].appendChild(script);
 })();
 
-var html_answers;
-
+(function(url_quiz_web_site) {
+    var html_answers;
+    console.log("Quiz Site 1) " + url_quiz_web_site);
 // load external html source with answers
-//https://raw.githubusercontent.com/laralex/UniversitySmallStuff/master/CCNA%20Hack%20(IV-2018)/CCNA%20answers%20html%20Final%20Exam.txt
-jQuery.get( "https://raw.githubusercontent.com/laralex/UniversitySmallStuff/master/CCNA%20Hack%20(IV-2018)/CCNA%20answers%20html%20(1-11%2C%20Final%20Exam%2C%20Practice%20Exam).txt", function( data ) {
-    
+$.get(url_quiz_web_site, function( data ) {    
 	html_answers = data; //entire page in html string
-});
+
+console.log("Html fetched 2) ");
 
 // list of questions in raw format
 var splited = html_answers.split(/<li><strong>/mg);
+
+console.log("Splited 3) ");
 
 // map of questions to answers
 var quiz = {};
 
 function removeGarbage(cur) { 
 	// Take just the text
-	return cur.replace(/<.?li>/ig, '').replace(/<.?span.*?>/ig, '').replace(/<.?strong>/ig, '').replace(/\*$/i, ''); 
+    return cur
+        .replace(/<.?li>/ig, '')
+        .replace(/<.?span.*?>/ig, '')
+        .replace(/<.?strong>/ig, '')
+        .replace(/\*$/i, ''); 
 }
-													
-for (var val in splited) {
+
+    console.log("Forming quiz 4)");
+// fill quiz dictionary with all questions - variants - answers
+    for (var val = 0; val < splited.length; ++val) {
 	var question_block = splited[val].match(/.*<\/strong>/im); 
-	if (question_block != null) {
+	if (question_block != null && val !== 0 && val !== splited.length - 1) {
 		var question_text = question_block[0].replace(/(.*)<\/strong>/im, '$1');
 		var answers = splited[val].match(/<span.*>.*<\/span>/img);
 		var variants = splited[val].match(/<li>.*<\/li>/img);
@@ -44,11 +52,9 @@ for (var val in splited) {
 }
 
 // Unparsed questions from Final exam
-quiz[`A network administrator wants to have the same subnet mask for three subnetworks at a small site. The site has the following networks and numbers of devices:<br>
-Subnetwork A: IP phones – 10 addresses<br>
-Subnetwork B: PCs – 8 addresses<br>
-Subnetwork C: Printers – 2 addresses`] = [[`255.255.255.240`], [`255.255.255.0`, `255.255.255.240`, `255.255.255.248`, `255.255.255.252`]];
+    console.log("Final parsed quiz");
+    console.log(JSON.stringify(quiz));
 
-quiz[`What network service resolves the URL entered on a PC to the IP address of the destination server?`] = [[`DNS`], [`DNS`, `DHCP`,`FTP`,`SNMP`]];
-
-JSON.stringify(quiz);
+});
+    
+})('https://itexamanswers.net/ccna-2-v6-0-final-exam-answers-routing-switching-essentials.html');

@@ -1,17 +1,17 @@
+var $;
 (function() {
     // Load the script
     var script = document.createElement("script");
     script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js';
     script.type = 'text/javascript';
     script.onload = function() {
-        var $ = window.jQuery;
+        $ = window.jQuery;
     };
     document.getElementsByTagName("head")[0].appendChild(script);
 })();
 
 var english_quiz;
-
-jQuery.get( "https://raw.githubusercontent.com/laralex/UniversitySmallStuff/master/CCNA%20Hack%20(IV-2018)/quiz.json", function( data ) {
+$.get( "https://raw.githubusercontent.com/laralex/UniversitySmallStuff/master/CCNA%20Hack%20(IV-2018)/quiz.json", function( data ) {
 	english_quiz = JSON.parse(data); //entire page in html string
 });
 
@@ -29,7 +29,7 @@ for (var question in Object.keys(english_quiz)) {
 		var answersGuess = english_quiz[question];
 		if (answersGuess.every( function(ag) {
 			for (var answElem in answersElements) {
-				if (answElem.innerText == ag) return true;						
+				if (answElem.innerText == ag) return true;	
 			}
 			return false;
 		})
